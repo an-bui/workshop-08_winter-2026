@@ -22,7 +22,7 @@ In this workshop, we will answer the question: How do specific leaf area, water 
 | Species name                 | Species code | Common name        |
 |------------------------------|--------------|--------------------|
 | _Encelia californica_        | ENCCAL       | Bush sunflower     |  
-| _Eschsholzia californica_    | ESCCAL       | California poppy   | 
+| _Eschscholzia californica_   | ESCCAL       | California poppy   | 
 | _Penstemon centranthifolius_ | PENCEN       | Scarlet bugler     | 
 | _Grindelia camporums_        | GRINCAM      | Gumweed            | 
 | _Salvia leucophylla_         | SALLEU       | Purple sage        | 
@@ -163,7 +163,7 @@ Label the axes with units where appropriate.
 
 Add a title describing the differences in (mean or median) plant mass between species.  
 
-Bonus: order the x-axis by decreasing mean plant mass.
+Bonus: order the x-axis by decreasing mean plant mass _and_ wrap the long species names using the `label_wrap()` function from the `scales` package.
 
 
 
@@ -217,13 +217,6 @@ Bonus: order the x-axis by decreasing mean plant mass.
 
 ```
 
-## Model diagnostics
-
-
-
-
-
-
 ## Model selection
 
 Insert code to use the `AICc()` function to calculate the AIC for each model.  
@@ -232,6 +225,16 @@ Arrange by decreasing AIC.
 
 
 
+
+## Model diagnostics
+
+Insert code to look at the diagnostic plots for the best model.
+
+
+
+
+
+## Summary
 
 Insert code to display the summary for the best model. 
 
@@ -272,6 +275,13 @@ Create a clean, publication ready figure depicting predictions for the best mode
 
 ## Figure caption
 
+
+
+
+
+
+
+
 ## Basic components of test
 
 **predictors**  
@@ -287,6 +297,9 @@ Create a clean, publication ready figure depicting predictions for the best mode
 
 
 **parameters (degrees of freedom)**  
+
+
+**test statistic**
 
 
 **R^2^**  
@@ -305,8 +318,13 @@ Create a clean, publication ready figure depicting predictions for the best mode
 
 ### Methods
 
+#### Goal of analysis
 
 
+#### Model selection
+
+
+#### Model diagnostics
 
 
 ### Results
