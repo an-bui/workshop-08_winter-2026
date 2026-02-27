@@ -488,7 +488,7 @@ ggplot(data = drought_exp_clean,
 
 ## Figure caption
 
-**Figure 4. Plant mass (g) differs across species and treatments.** Open circles represent individuals in each treatment (red: drought stressed, blue: well watered). Panels depict different species. Opaque points represent model predictions fof plant mass, and bars represent 95% confidence intervals of model predictions. Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
+**Figure 4. Plant mass (g) differs across species and treatments.** Open circles represent individuals in each treatment (red: drought stressed, blue: well watered). Panels depict different species. Opaque points represent model predictions for plant mass, and bars represent 95% confidence intervals of model predictions. Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
 
 Note:  
 
