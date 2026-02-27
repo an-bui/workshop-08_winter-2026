@@ -488,44 +488,50 @@ ggplot(data = drought_exp_clean,
 
 ## Figure caption
 
+**Figure 4. Plant mass (g) differs across species and treatments.** Open circles represent idnividuals in each treatment (red: drought stressed, blue: well watered). Panels depict different species. Opaque points represent model predictions fo plant mass, and bars represent 95% confidence intervals of model predictions. Data source: Valliere, Justin; Zhang, Jacqueline; Sharifi, M.; Rundel, Philip (2019). Data from: Can we condition native plants to increase drought tolerance and improve restoration success? [Dataset]. Dryad. [https://doi.org/10.5061/dryad.v0861f7](https://doi.org/10.5061/dryad.v0861f7)  
 
+Note:  
 
-
-
-
-
+- the figure number (Figure 4) and title (Plant mass (g) differs across species and treatments) are in **bold**
+- the caption includes a description of the open circles (individual observations) and opaque points (model predictions) and bars (95% CI around _predictions_) and colors (representing treatments)
+- data source is copied from the data citation in section 2 ("Clean data")
 
 ## Basic components of test
 
 **predictors**  
-
+full model: specific leaf area (cm^2^/g), water treatment, species  
+selected model: water treatment, species
 
 **response**  
-
+plant mass (g)
 
 **test**  
-
+linear model (you could also call this "multiple linear regression")
 
 **distribution**  
-
+F
 
 **parameters (degrees of freedom)**  
+7, 62  
 
+note:  
+**7** comes from 8 estimates - 1 = 7  
+**62** comes from 70 observations - 8 estimates = 62
 
 **test statistic**
-
+27.08  
 
 **R^2^**  
-
+0.73  
 
 **p-value**   
-
+p < 0.001 (`p-value: < 2.2e-16` in summary)  
 
 **significance level**  
-
+$\alpha$ = 0.05
 
 **reference level(s)**  
-
+Drought stressed and _Lotus scoparius_
 
 ## Written communication
 
@@ -533,16 +539,19 @@ ggplot(data = drought_exp_clean,
 
 #### Goal of analysis
 
+We used linear models to determine the predictive relationship between specific leaf area (cm^2^/g), treatment, and species on plant mass.
 
 #### Model selection
 
+We chose the simplest model that explained the most variation in plant mass using Akaike's Information Criterion (AIC).
 
 #### Model diagnostics
 
+We evaluated model assumptions for the simplest model chose using AIC for normally distributed errors (residuals) using QQ plots and homoscedastic errors (residuals) using Residuals vs Fitted and Scale-Location plots.
 
 ### Results
 
-
+We found that the simplest model describing variation in plant mass included species and treatment as predictor variables (linear model: F(7, 62) = 27.08, p < 0.001, $\alpha$ = 0.05, adjusted R^2^ = 0.73).
 
 
 
